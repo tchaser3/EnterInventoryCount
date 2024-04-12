@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="WarehousesDataSet" targetNamespace="http://tempuri.org/WarehousesDataSet.xsd" xmlns:mstns="http://tempuri.org/WarehousesDataSet.xsd" xmlns="http://tempuri.org/WarehousesDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="WarehousesDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="WarehousesDataSet" msprop:Generator_UserDSName="WarehousesDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="warehouses" msprop:Generator_TableClassName="warehousesDataTable" msprop:Generator_TableVarName="tablewarehouses" msprop:Generator_RowChangedName="warehousesRowChanged" msprop:Generator_TablePropName="warehouses" msprop:Generator_RowDeletingName="warehousesRowDeleting" msprop:Generator_RowChangingName="warehousesRowChanging" msprop:Generator_RowEvHandlerName="warehousesRowChangeEventHandler" msprop:Generator_RowDeletedName="warehousesRowDeleted" msprop:Generator_RowClassName="warehousesRow" msprop:Generator_UserTableName="warehouses" msprop:Generator_RowEvArgName="warehousesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WarehouseID" msprop:Generator_ColumnVarNameInTable="columnWarehouseID" msprop:Generator_ColumnPropNameInRow="WarehouseID" msprop:Generator_ColumnPropNameInTable="WarehouseIDColumn" msprop:Generator_UserColumnName="WarehouseID" type="xs:int" />
+              <xs:element name="WarehouseName" msprop:Generator_ColumnVarNameInTable="columnWarehouseName" msprop:Generator_ColumnPropNameInRow="WarehouseName" msprop:Generator_ColumnPropNameInTable="WarehouseNameColumn" msprop:Generator_UserColumnName="WarehouseName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:warehouses" />
+      <xs:field xpath="mstns:WarehouseID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
